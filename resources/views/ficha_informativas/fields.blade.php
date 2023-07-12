@@ -48,6 +48,6 @@
 
 <!-- Socio Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('socio_id', 'Socio Id:') !!}
+    {!! Form::label('socio_id', 'Cédula del socio:') !!}
     {!! Form::number('socio_id', null, ['class' => 'form-control']) !!}
 </div>

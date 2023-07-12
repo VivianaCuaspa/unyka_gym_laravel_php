@@ -48,7 +48,7 @@
 
 <!-- Socio Id Field -->
 <div class="col-sm-12">
-    {!! Form::label('socio_id', 'Socio Id:') !!}
+    {!! Form::label('socio_id', 'Cédula del socio:') !!}
     <p>{{ $fichaInformativa->socio_id }}</p>
 </div>
 

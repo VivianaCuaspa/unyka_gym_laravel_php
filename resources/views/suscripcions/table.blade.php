@@ -13,8 +13,8 @@
         <tbody>
         @foreach($suscripcions as $suscripcion)
             <tr>
-                <td>{{ $suscripcion->socio_id }}</td>
-            <td>{{ $suscripcion->tipo_suscripcion_id }}</td>
+            <td>{{ $suscripcion->socio->nombre }}</td>
+            <td>{{ $suscripcion->tipoSuscripcion->nombre}}</td>
             <td>{{ $suscripcion->fecha_inicio }}</td>
             <td>{{ $suscripcion->fecha_fin }}</td>
             <td>{{ $suscripcion->estado }}</td>

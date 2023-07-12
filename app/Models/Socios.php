@@ -36,6 +36,7 @@ class Socios extends Model
 
 
     public $fillable = [
+        'id',
         'nombre',
         'telefono',
         'direccion',
@@ -67,6 +68,7 @@ class Socios extends Model
      * @var array
      */
     public static $rules = [
+        'id'  => 'required|string|max:255',
         'nombre' => 'required|string|max:255',
         'telefono' => 'required|string|max:255',
         'direccion' => 'required|string|max:255',

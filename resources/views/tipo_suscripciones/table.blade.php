@@ -2,10 +2,10 @@
     <table class="table" id="tipoSuscripciones-table">
         <thead>
         <tr>
-            <th>Nombre</th>
-        <th>N Meses</th>
+        <th>Nombre</th>
+        <th>Numero de Meses</th>
         <th>Precio</th>
-            <th colspan="3">Action</th>
+        <th colspan="3">Action</th>
         </tr>
         </thead>
         <tbody>

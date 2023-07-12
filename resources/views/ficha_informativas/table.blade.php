@@ -2,6 +2,7 @@
     <table class="table" id="fichaInformativas-table">
         <thead>
         <tr>
+        <th>Nombre de socio</th>
             <th>Nivel Actividad</th>
         <th>Frecuencia Alimentacion</th>
         <th>Intolerancias</th>
@@ -10,13 +11,13 @@
         <th>Patologia</th>
         <th>Patología Familiar</th>
         <th>Medicacion</th>
-        <th>Socio Id</th>
             <th colspan="3">Action</th>
         </tr>
         </thead>
         <tbody>
         @foreach($fichaInformativas as $fichaInformativa)
             <tr>
+            <td>{{ $fichaInformativa->socio->nombre }}</td>
                 <td>{{ $fichaInformativa->nivel_actividad }}</td>
             <td>{{ $fichaInformativa->frecuencia_alimentacion }}</td>
             <td>{{ $fichaInformativa->intolerancias }}</td>
@@ -25,7 +26,6 @@
             <td>{{ $fichaInformativa->patologia }}</td>
             <td>{{ $fichaInformativa->patología_familiar }}</td>
             <td>{{ $fichaInformativa->medicacion }}</td>
-            <td>{{ $fichaInformativa->socio_id }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['fichaInformativas.destroy', $fichaInformativa->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

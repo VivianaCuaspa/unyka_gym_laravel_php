@@ -2,7 +2,8 @@
     <table class="table" id="socios-table">
         <thead>
         <tr>
-            <th>Nombre</th>
+        <th>Cédula</th>
+        <th>Nombre</th>
         <th>Telefono</th>
         <th>Direccion</th>
         <th>Fecha Nacimiento</th>
@@ -15,7 +16,8 @@
         <tbody>
         @foreach($socios as $socios)
             <tr>
-                <td>{{ $socios->nombre }}</td>
+            <td>{{ $socios->id }}</td>
+            <td>{{ $socios->nombre }}</td>
             <td>{{ $socios->telefono }}</td>
             <td>{{ $socios->direccion }}</td>
             <td>{{ $socios->fecha_nacimiento }}</td>

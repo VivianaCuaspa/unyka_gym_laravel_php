@@ -78,7 +78,7 @@ class Suscripcion extends Model
      **/
     public function socio()
     {
-        return $this->belongsTo(\App\Models\Socio::class, 'socio_id');
+        return $this->belongsTo(\App\Models\Socios::class, 'socio_id');
     }
 
     /**
@@ -86,6 +86,6 @@ class Suscripcion extends Model
      **/
     public function tipoSuscripcion()
     {
-        return $this->belongsTo(\App\Models\TipoSuscripcione::class, 'tipo_suscripcion_id');
+        return $this->belongsTo(\App\Models\TipoSuscripciones::class, 'tipo_suscripcion_id');
     }
 }

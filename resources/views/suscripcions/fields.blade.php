@@ -1,38 +1,8 @@
 <!-- Socio Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('socio_id', 'Buscar Socio por Nombre:') !!}
-    {!! Form::hidden('socio_id', null, ['id' => 'socio_id']) !!}
-    {!! Form::text('socio_nombre', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el nombre del socio', 'id' => 'socio_nombre']) !!}
+    {!! Form::label('socio_id', 'Socio Id:') !!}
+    {!! Form::number('socio_id', null, ['class' => 'form-control']) !!}
 </div>
-
-@push('page_scripts')
-    <script>
-        $('#socio_nombre').autocomplete({
-            source: function(request, response) {
-                $.ajax({
-                    url: "{{ route('socios.search') }}",
-                    dataType: "json",
-                    data: {
-                        term: request.term
-                    },
-                    success: function(data) {
-                        response($.map(data, function(item) {
-                            return {
-                                label: item.nombre,
-                                value: item.id
-                            };
-                        }));
-                    }
-                });
-            },
-            select: function(event, ui) {
-                $('#socio_id').val(ui.item.value);
-                $('#socio_nombre').val(ui.item.label);
-                return false;
-            }
-        });
-    </script>
-@endpush
 
 <!-- Tipo Suscripcion Id Field -->
 <div class="form-group col-sm-6">

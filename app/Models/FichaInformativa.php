@@ -93,6 +93,6 @@ class FichaInformativa extends Model
      **/
     public function socio()
     {
-        return $this->belongsTo(\App\Models\Socio::class, 'socio_id');
+        return $this->belongsTo(\App\Models\Socios::class, 'socio_id');
     }
 }
