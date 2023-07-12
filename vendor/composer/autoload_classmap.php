@@ -16,9 +16,10 @@ return array(
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
-    'App\\Http\\Controllers\\FichaInformativaController' => $baseDir . '/app/Http/Controllers/FichaInformativaController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\SociosController' => $baseDir . '/app/Http/Controllers/SociosController.php',
+    'App\\Http\\Controllers\\SuscripcionController' => $baseDir . '/app/Http/Controllers/SuscripcionController.php',
+    'App\\Http\\Controllers\\TipoSuscripcionesController' => $baseDir . '/app/Http/Controllers/TipoSuscripcionesController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -28,12 +29,28 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
-    'App\\Http\\Requests\\CreateFichaInformativaRequest' => $baseDir . '/app/Http/Requests/CreateFichaInformativaRequest.php',
     'App\\Http\\Requests\\CreateSociosRequest' => $baseDir . '/app/Http/Requests/CreateSociosRequest.php',
-    'App\\Http\\Requests\\UpdateFichaInformativaRequest' => $baseDir . '/app/Http/Requests/UpdateFichaInformativaRequest.php',
+
     'App\\Http\\Requests\\UpdateSociosRequest' => $baseDir . '/app/Http/Requests/UpdateSociosRequest.php',
-    'App\\Models\\FichaInformativa' => $baseDir . '/app/Models/FichaInformativa.php',
+
+    'App\\Http\\Requests\\CreateSuscripcionRequest' => $baseDir . '/app/Http/Requests/CreateSuscripcionRequest.php',
+    'App\\Http\\Requests\\CreateTipoSuscripcionesRequest' => $baseDir . '/app/Http/Requests/CreateTipoSuscripcionesRequest.php',
+
+
+
+
+
+
+
+
+    'App\\Http\\Requests\\UpdateSuscripcionRequest' => $baseDir . '/app/Http/Requests/UpdateSuscripcionRequest.php',
+    'App\\Http\\Requests\\UpdateTipoSuscripcionesRequest' => $baseDir . '/app/Http/Requests/UpdateTipoSuscripcionesRequest.php',
+
+
+
     'App\\Models\\Socios' => $baseDir . '/app/Models/Socios.php',
+    'App\\Models\\Suscripcion' => $baseDir . '/app/Models/Suscripcion.php',
+    'App\\Models\\TipoSuscripciones' => $baseDir . '/app/Models/TipoSuscripciones.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
@@ -41,8 +58,9 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Repositories\\BaseRepository' => $baseDir . '/app/Repositories/BaseRepository.php',
-    'App\\Repositories\\FichaInformativaRepository' => $baseDir . '/app/Repositories/FichaInformativaRepository.php',
     'App\\Repositories\\SociosRepository' => $baseDir . '/app/Repositories/SociosRepository.php',
+    'App\\Repositories\\SuscripcionRepository' => $baseDir . '/app/Repositories/SuscripcionRepository.php',
+    'App\\Repositories\\TipoSuscripcionesRepository' => $baseDir . '/app/Repositories/TipoSuscripcionesRepository.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/CorsService.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -162,8 +180,9 @@ return array(
     'Cron\\HoursField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
     'Cron\\MinutesField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
     'Cron\\MonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
-    'Database\\Factories\\FichaInformativaFactory' => $baseDir . '/database/factories/FichaInformativaFactory.php',
     'Database\\Factories\\SociosFactory' => $baseDir . '/database/factories/SociosFactory.php',
+    'Database\\Factories\\SuscripcionFactory' => $baseDir . '/database/factories/SuscripcionFactory.php',
+    'Database\\Factories\\TipoSuscripcionesFactory' => $baseDir . '/database/factories/TipoSuscripcionesFactory.php',
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
