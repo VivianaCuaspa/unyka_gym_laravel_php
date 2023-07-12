@@ -23,3 +23,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::resource('socios', App\Http\Controllers\SociosController::class);
+
+
+
+
+Route::resource('fichaInformativas', App\Http\Controllers\FichaInformativaController::class);
