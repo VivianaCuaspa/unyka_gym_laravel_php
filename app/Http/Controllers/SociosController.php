@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateSociosRequest;
 use App\Http\Requests\UpdateSociosRequest;
+use App\Models\Socios;
 use App\Repositories\SociosRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
@@ -150,7 +151,23 @@ class SociosController extends AppBaseController
         $this->sociosRepository->delete($id);
 
         Flash::success('Socios deleted successfully.');
-
         return redirect(route('socios.index'));
     }
+
+    public function searchSocios(Request $request)
+    {
+        $searchTerm = $request->get('term');
+        $socios = Socios::where('nombre', 'LIKE', '%' . $searchTerm . '%')->get();
+
+        $data = [];
+    
+        foreach ($socios as $socio) {
+            $data[] = [
+                'id' => $socio->id,
+                'nombre' => $socio->nombre
+            ];
+        }
+        return $data;
+    }    
+    
 }
