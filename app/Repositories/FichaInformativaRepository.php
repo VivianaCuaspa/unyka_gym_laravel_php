@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class FichaInformativaRepository
  * @package App\Repositories
- * @version July 12, 2023, 2:34 am UTC
+ * @version July 12, 2023, 3:05 pm UTC
 */
 
 class FichaInformativaRepository extends BaseRepository

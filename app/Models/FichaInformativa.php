@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class FichaInformativa
  * @package App\Models
- * @version July 12, 2023, 2:34 am UTC
+ * @version July 12, 2023, 3:05 pm UTC
  *
  * @property \App\Models\Socio $socio
  * @property integer $nivel_actividad

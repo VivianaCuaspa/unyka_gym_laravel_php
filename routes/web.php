@@ -38,3 +38,6 @@ Route::get('tipo_suscripciones_search', 'App\Http\Controllers\TipoSuscripcionesC
 
 
 Route::resource('suscripcions', App\Http\Controllers\SuscripcionController::class);
+
+
+Route::resource('fichaInformativas', App\Http\Controllers\FichaInformativaController::class);

@@ -45,3 +45,11 @@
 </li>
 
 
+<li class="nav-item">
+    <a href="{{ route('fichaInformativas.index') }}"
+       class="nav-link {{ Request::is('fichaInformativas*') ? 'active' : '' }}">
+        <p>Ficha Informativas</p>
+    </a>
+</li>
+
+
